@@ -2,13 +2,10 @@
 # SPDX-FileCopyrightText: 2022 Ryuichi Ueda
 # SPDX-License-Identifier: BSD-3-Clause
 
-ng () {
-	echo NG at line $1
-	res=1
-		
-}
+
 
 res=0
++ res=0
 out=$(seq 5 | ./plus)
 ++ seq 5
 ++ ./plus

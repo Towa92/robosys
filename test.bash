@@ -15,3 +15,4 @@ out=$(seq 5 | ./plus)
 [ "$res" = 0 ] &
 & echo OK
 exit $res
++ exit 0

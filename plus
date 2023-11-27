@@ -1,14 +1,28 @@
 #!/usr/bin/python3
 
 import sys
+import math
+
+file_path = "/home/akun/robosys/data/numbers.txt"
+
+try:
+    with open(file_path, 'r') as file:
+        numbers = [line.strip() for line in file.readlines()]
+except FileNotFoundError:
+    print(f"File '{file.strip}' not found.")
+    exit(1)
 
 ans = 0.0
-for line in sys.stdin:
+for num in numbers:
+
     try:
-        ans += int(line)
+        ans += int(num)
 
-    except:
-        ans += float(line)
+    except ValueError:
+        try:
+            ans += float(num)
+        except ValueError:
+            print(f"Ignored non number input: {num}")
+print(math.sqrt(ans))
 
-print(ans+1)
 

@@ -12,9 +12,10 @@ except FileNotFoundError:
     print(f"File '{file.strip}' not found.")
     exit(1)
 
+a = []
 ans = 0.0
 for num in numbers:
-
+    a.append(num)
     try:
         ans += int(num)
 
@@ -25,4 +26,19 @@ for num in numbers:
             print(f"Ignored non number input: {num}")
 print(math.sqrt(ans))
 
+print(a)
+ma = float(0)
+mi = float(100)
+for x in a:
+    try:
+        x = int(x)
+        if x > ma:
+            ma = x
+        if x < mi:
+            mi = x
+    except ValueError:
+        print("No numeric value: {x}")
+
+print("maximum",ma)
+print("minimum",mi)
 

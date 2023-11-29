@@ -28,6 +28,5 @@ number.txt の中に数字を入力します。数字を文字や空白から分
 ## ライセンス
 
 * このソフトウェアパッケージは、3条項BSDライセンス下、再頒布および使用が許可されます。
-* このパッケージは，aaa由来のコード（© 2022 Hoge Fuge）を利用しています．
 * このパッケージのコードは、[ryuichiueda/my_slides robosys_2022](https://github.com/ryuichiueda/my_slides/tree/master/robosys_2022) のスライドを基にしており、これらのスライドは[Ryuichi UedaによるCC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)のライセンスで提供されています。私はRyuichi Uedaからこのコンテンツを使用し、自身の著作物に組み込む許可を得ており、これを彼のオリジナルの創作物として認識しています。
 * © 2022 Ryuichi Ueda

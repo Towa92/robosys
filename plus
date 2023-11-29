@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+# SPDX-FileCopyrightText: 2022 Ryuichi Ueda
+# SPDX-License-Identifier: BSD-3-Clause
 
 import sys
 import math
@@ -14,6 +16,7 @@ except FileNotFoundError:
 
 a = []
 ans = 0.0
+i = 0
 for num in numbers:
     a.append(num)
     try:
@@ -24,9 +27,8 @@ for num in numbers:
             ans += float(num)
         except ValueError:
             print(f"Ignored non number input: {num}")
-print(math.sqrt(ans))
+            i += 1
 
-print(a)
 ma = float(0)
 mi = float(100)
 for x in a:
@@ -37,8 +39,7 @@ for x in a:
         if x < mi:
             mi = x
     except ValueError:
-        print("No numeric value: {x}")
+        print("no numeric value: {x}")
 
-print("maximum",ma)
-print("minimum",mi)
+print(f"total: {math.sqrt(ans)}; maximum: {ma}; minimum: {mi};{i}")
 

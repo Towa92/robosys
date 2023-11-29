@@ -4,7 +4,7 @@
 
 ## plusコマンド
 
-![test](https://github.com/Towa92/robosys/blob/main/.github/workflows/test.yml/badge.svg)
+![test](https://github.com/Towa92/robosys/actions/workflows/test.yml/badge.svg)
 
 ##　特徴
 

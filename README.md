@@ -1,4 +1,4 @@
-#　robosys
+# robosys
 
 "plus"は提供された数字の合計値と最大、最小の値を求めるコードです。
 
@@ -6,9 +6,9 @@
 
 ![test](https://github.com/Towa92/robosys/actions/workflows/test.yml/badge.svg)
 
-##　特徴
+## 特徴
 
-data の別ディレクトリに数字を保管できる number.txt を作り plus に数字を送る形になっております。
+数字を保管できる number.txt を作り plus に数字を送る形になっております。
 数字の合計値を求める上で最大と最小の値を画面に移すことが出来ます。
 
 ## 使い方

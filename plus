@@ -4,9 +4,8 @@
 
 import sys
 import math
-import os
 
-file_path =os.path.abspath("/home/akun/robosys/data/numbers.txt")
+file_path ="numbers.txt"
 
 try:
     with open(file_path, 'r') as file:
